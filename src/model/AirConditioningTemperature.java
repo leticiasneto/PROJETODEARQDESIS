@@ -32,3 +32,4 @@ public class AirConditioningTemperature implements Serializable {
 	}
 
 }
+/*Design by Wesley Ramos Leite, All Rights Reserved*/

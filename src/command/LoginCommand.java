@@ -6,6 +6,10 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import model.User;
+import transferObject.UserTO;
 
 public class LoginCommand implements Command {
 
@@ -18,25 +22,28 @@ public class LoginCommand implements Command {
 
 		String stringUserName;
 		String stringPassword;
-		
+
 		stringUserName = request.getParameter("stringUserName");
-		stringPassword = request.getParameter("stringPassword"); 		
-		
+		stringPassword = request.getParameter("stringPassword");
+		User usuario = new User();
+		usuario.setStringLogin(stringUserName);
+		usuario.setStringPassword(stringPassword);
+		HttpSession session = request.getSession();
+
 		System.out.println(stringPassword + "---" + stringUserName);
-		if(stringUserName.equals("adm") && stringPassword.equals("adm")){
-			
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("HomeJSP.jsp");
-			try {
-				requestDispatcher.forward(request, response);
-			} catch (ServletException | IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}	
-		
+		if (stringUserName.equals("adm") && stringPassword.equals("adm")) {
+			usuario.setLogin(true);
+			UserTO userTO = new UserTO();
+			userTO.setStringLogin(usuario.getStringLogin());
+			userTO.setStringPassword(usuario.getStringPassword());
+			userTO.setLogin(usuario.isLogin());
+
+			session.setAttribute("logado", userTO);
+
 		}
-		
-		else{
-			
+
+		else {
+
 			RequestDispatcher requestDispatcher = request.getRequestDispatcher("ErrorLoginJSP.jsp");
 			try {
 				requestDispatcher.forward(request, response);
@@ -44,9 +51,16 @@ public class LoginCommand implements Command {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
+
 		}
-		
+
+		try {
+			response.sendRedirect("HomeJSP.jsp");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 
 }

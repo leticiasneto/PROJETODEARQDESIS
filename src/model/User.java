@@ -4,9 +4,14 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String stringLogin;
 	private String stringPassword;
 	private int intType;
+	private boolean login;
 
 	// Constructor
 
@@ -25,6 +30,14 @@ public class User implements Serializable {
 		this.stringPassword = "";
 		this.intType = -1;
 
+	}
+
+	public boolean isLogin() {
+		return login;
+	}
+
+	public void setLogin(boolean login) {
+		this.login = login;
 	}
 
 	// Sets
@@ -55,3 +68,4 @@ public class User implements Serializable {
 	}
 
 }
+/*Design by Wesley Ramos Leite, All Rights Reserved*/

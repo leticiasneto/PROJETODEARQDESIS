@@ -25,3 +25,4 @@ public class ConnectionFactory {
 	}
 
 }
+/*Design by Wesley Ramos Leite, All Rights Reserved*/

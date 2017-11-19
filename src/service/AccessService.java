@@ -26,3 +26,4 @@ public class AccessService {
 	}
 
 }
+/* Design by Wesley Ramos Leite, All Rights Reserved */

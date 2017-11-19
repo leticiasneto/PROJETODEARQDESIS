@@ -86,3 +86,4 @@ public class UserDAO {
 	
 
 }
+/*Design by Wesley Ramos Leite, All Rights Reserved*/

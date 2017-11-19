@@ -96,3 +96,4 @@ public class UserController extends HttpServlet {
 	}
 
 }
+/* Design by Wesley Ramos Leite, All Rights Reserved */

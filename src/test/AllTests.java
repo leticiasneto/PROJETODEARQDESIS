@@ -10,3 +10,4 @@ import org.junit.runners.Suite.SuiteClasses;
 public class AllTests {
 
 }
+/*Design by Wesley Ramos Leite, All Rights Reserved*/

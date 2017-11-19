@@ -40,3 +40,4 @@ public class PropertySet implements Serializable {
 	}
 
 }
+/*Design by Wesley Ramos Leite, All Rights Reserved*/

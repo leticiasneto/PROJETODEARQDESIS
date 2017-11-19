@@ -70,3 +70,4 @@ public class PropertySetDAO {
 	}
 
 }
+/* Design by Wesley Ramos Leite, All Rights Reserved */

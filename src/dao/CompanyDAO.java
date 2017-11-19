@@ -81,3 +81,4 @@ public class CompanyDAO {
 	}
 
 }
+/* Design by Wesley Ramos Leite, All Rights Reserved */

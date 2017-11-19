@@ -39,3 +39,4 @@ public class CompanyController extends HttpServlet {
 	}
 
 }
+/* Design by Wesley Ramos Leite, All Rights Reserved */

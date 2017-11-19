@@ -39,4 +39,4 @@ public class AirConditioningTemperatureController extends HttpServlet {
 	}
 
 }
-
+/* Design by Wesley Ramos Leite, All Rights Reserved */

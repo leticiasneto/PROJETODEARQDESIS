@@ -18,3 +18,4 @@ public class AirConditioningTemperatureTO  {
 	}
 
 }
+/*Design by Wesley Ramos Leite, All Rights Reserved*/

@@ -70,3 +70,4 @@ public class AirConditioningTemperatureDAO {
 	}
 
 }
+/* Design by Wesley Ramos Leite, All Rights Reserved */
